@@ -1,6 +1,7 @@
 # Hostel-Management-System
 
-::USES::
+++IMORTANT++
+--USES--
 
 Framework : C#
 DataBase : Oracle 19c or Oracle 19.10
