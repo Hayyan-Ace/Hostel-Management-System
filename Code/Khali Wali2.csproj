@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54D6BA39-C143-4A42-95A5-6BD5892BEC6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Khali_Wali2</RootNamespace>
+    <AssemblyName>Khali Wali2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.10.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminBill_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminBill_Form.Designer.cs">
+      <DependentUpon>adminBill_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminBill_GYM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminBill_GYM.Designer.cs">
+      <DependentUpon>adminBill_GYM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminBill_Hostel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminBill_Hostel.Designer.cs">
+      <DependentUpon>adminBill_Hostel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminBill_Mess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminBill_Mess.Designer.cs">
+      <DependentUpon>adminBill_Mess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminBuildingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminBuildingForm.Designer.cs">
+      <DependentUpon>adminBuildingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminPerson_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminPerson_Delete.Designer.cs">
+      <DependentUpon>adminPerson_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminExpensesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminExpensesForm.Designer.cs">
+      <DependentUpon>adminExpensesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminRoomForm.Designer.cs">
+      <DependentUpon>adminRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUI.Designer.cs">
+      <DependentUpon>AdminUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminPerson_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminPerson_Form.Designer.cs">
+      <DependentUpon>adminPerson_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminPerson_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminPerson_Insert.Designer.cs">
+      <DependentUpon>adminPerson_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminPerson_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminPerson_View.Designer.cs">
+      <DependentUpon>adminPerson_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminVisitorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminVisitorForm.Designer.cs">
+      <DependentUpon>adminVisitorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personUI.Designer.cs">
+      <DependentUpon>personUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personUI_Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personUI_Bills.Designer.cs">
+      <DependentUpon>personUI_Bills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personUI_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personUI_Home.Designer.cs">
+      <DependentUpon>personUI_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adminBill_Form.resx">
+      <DependentUpon>adminBill_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminBill_GYM.resx">
+      <DependentUpon>adminBill_GYM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminBill_Hostel.resx">
+      <DependentUpon>adminBill_Hostel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminBill_Mess.resx">
+      <DependentUpon>adminBill_Mess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminBuildingForm.resx">
+      <DependentUpon>adminBuildingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminPerson_Delete.resx">
+      <DependentUpon>adminPerson_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminExpensesForm.resx">
+      <DependentUpon>adminExpensesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminRoomForm.resx">
+      <DependentUpon>adminRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUI.resx">
+      <DependentUpon>AdminUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminPerson_Form.resx">
+      <DependentUpon>adminPerson_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminPerson_Insert.resx">
+      <DependentUpon>adminPerson_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminPerson_View.resx">
+      <DependentUpon>adminPerson_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminVisitorForm.resx">
+      <DependentUpon>adminVisitorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personUI.resx">
+      <DependentUpon>personUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personUI_Bills.resx">
+      <DependentUpon>personUI_Bills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personUI_Home.resx">
+      <DependentUpon>personUI_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminlogo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminLogo1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
